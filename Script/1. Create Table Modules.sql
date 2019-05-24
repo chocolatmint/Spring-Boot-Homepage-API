@@ -1,0 +1,27 @@
+USE [HomepageAPI]
+GO
+
+/****** Object:  Table [dbo].[modules]    Script Date: 24/05/2019 22:06:27 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[modules](
+	[id_module] [int] IDENTITY(1,1) NOT NULL,
+	[module_name] [varchar](300) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id_module] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
